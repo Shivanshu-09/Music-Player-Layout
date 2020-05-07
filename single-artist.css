@@ -1,0 +1,134 @@
+
+/* Main screen body*/
+body{
+
+	margin:0px;
+	padding: 0px;
+	background-color: #1E0562;
+}
+
+header{
+
+	background-color: #231A52;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-around;
+
+
+}
+
+/*Main Artist Image*/
+
+.image-of-artist{
+
+	height: 50%;
+	width: 50%;
+	margin:auto;
+	padding: 50px;
+}
+
+.image-of-artist img{
+
+	height: 70%;
+	width: 100%;
+	margin: auto;
+	border-radius: 50%;
+
+
+}
+
+/*Info section about artist*/
+
+#about-artist h1{
+
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	margin-top: -100px;
+	color: white;
+	text-shadow: 2px 2px 5px grey;
+}
+
+#about-artist{
+
+	height: 100vh;
+	width: 30vw;
+
+}
+
+
+.info-artist{
+
+	align-content: center;
+}
+
+
+.info-artist p{
+
+	color: lightgrey;
+	font-size: 1.5rem;
+	font-weight: 100;
+	
+	margin-left: 20%;
+	display: inline-block;
+	line-height: 1.5rem;
+	word-spacing: 1rem;
+
+}
+
+
+.artist-popular-songs{
+
+	height: 100vh;
+	width: 70vw;
+	
+}
+
+.artist-popular-songs h1{
+
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	font-size: 1.8rem;
+	font-weight: 800;
+}
+
+.song-list{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+
+
+
+}
+
+.song-list div img{
+
+	height: 200px;
+	width: 200px;
+	margin:25px;
+	border-radius: 15px;
+}
+
+
+.song-list div h2{
+
+	color: white;
+	font-size: 1.2rem;
+	text-align: center;
+	margin:auto;
+	/*margin-top: -10px;
+	margin-left:18px;*/
+}
+
+hr{
+
+	color: black;
+	font-size: 1rem;
+	margin:50px;
+
+}

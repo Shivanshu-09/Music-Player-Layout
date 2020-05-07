@@ -1,0 +1,344 @@
+body{
+
+	background-color: 	#120340;
+	margin: 0px;
+	padding: 0px;
+}
+
+:root{
+
+	--white-color:#C8C7D3;
+
+
+}
+/*Adding Transition on the movies list*/
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(50px, 0);
+  }
+  
+  80% {
+    transform: translate(-50px, 0);
+  }
+}
+
+/* Header */
+header{
+
+	background-color: #0F0727;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-around;
+
+
+}
+
+header section{
+
+	height: 100px;
+	width: 200px;
+	padding: 10px;
+	margin:10px;
+}
+
+#logo i{
+
+	color: red;
+	transform: scale(2);
+	padding: 10px;
+	margin:10px;
+	
+}
+
+#logo-name{
+
+	display: inline-block;
+}
+
+#logo-name h3{
+	color: white;
+	font-size: 1.8rem;
+	font-weight: bold;
+
+}
+
+#logo-name h3:hover{
+
+	box-shadow: 0px 0px 5px 5px lightgrey;
+	
+}
+
+#favourites-heading{
+
+	color: white;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+#favourites-heading:hover{
+  box-shadow: 0px 0px 5px 5px lightgrey;
+
+}
+
+
+#search input{
+	font-size: 1rem;
+	font-weight: bold;
+	width: 150px;
+}
+/*Search Button*/
+
+button{
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: bold;
+
+}
+
+/*Bell Icon*/
+
+#notification i{
+
+	color: white;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+#notification i:hover{
+
+	box-shadow: 0px 0px 5px 5px lightgrey;
+
+}
+
+/*S or account icon*/
+
+#account-login i{
+
+	border-radius: 50%;
+	color: red;
+	position: relative;
+	font-size: 1.8rem;
+	font-weight: bold;
+
+}
+
+#account-login i:hover{
+
+	box-shadow: 0px 0px 10px 10px lightgrey;
+}
+
+/*Main section*/
+
+main{
+	display: flex;
+	flex-direction: row;
+	width: 100;
+	
+}
+
+#upper-main{
+
+	display: flex;
+	flex-direction: column;
+	height: 75%;
+	width: 75%;
+	
+
+}
+
+#upper-main h2{
+
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px 5px grey;
+}
+
+/* Movies Section */
+#new-movies{
+
+	height:40%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	
+}
+
+#new-movies{
+
+	animation: nudge 5s linear infinite alternate;
+}
+
+.movie-image img{
+
+	
+	height: 150px;
+	width: 150px;
+	flex-grow: 1;
+    flex-basis: 0;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
+
+	
+}
+
+.movie-image img:hover{
+
+	transform: scale(1.5);
+}
+
+/*Recently Played*/
+
+#queue{
+
+	
+	width: 25%;
+	align-content: top-right;
+	background-color: #190558;
+
+
+}
+
+#queue-heading{
+
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 5px grey;
+
+	
+
+
+}
+
+#queue-songs{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+
+}
+
+
+.song{
+
+	margin:20px;
+}
+/*Table Created Inside Queue*/
+
+table td{
+	text-align: right;
+}
+
+table th{
+	text-align: left;
+	color: white;
+}
+
+/*Popular Artist*/
+
+#popular-artists{
+
+	height:40%;
+	width: 100%;
+
+	
+}
+
+#popular-artists h2{
+
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.artist-image {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	
+}
+
+.artist-image li{
+
+	list-style: none;
+}
+
+.artist-image li img{
+
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.artist-image li img:hover{
+
+	box-shadow: 0px 0px 5px 5px grey;
+}
+
+
+.artist-image li h3{
+
+	color: var(--white-color);
+}
+
+
+/*Trending Songs*/
+
+#trending-songs{
+
+	height:40%;
+	width: 100%;
+}
+
+#trending-songs h2{
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.trending-song-image li img{
+
+
+	height: 100px;
+	width: 100px;
+
+
+}
+
+
+.trending-song-image{
+
+	animation: nudge 5s linear infinite alternate;
+}
+
+#trending-songs ul{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.trending-song-image li{
+
+	list-style: none;
+}
+
+
+.trending-song-image li h3{
+
+	color: var(--white-color);
+}
